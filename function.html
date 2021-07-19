@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    //regular function
+    // function myFun(){
+    //     document.write("hello from myFun function");
+    // }
+    // myFun();
+
+    //arrow function
+    // myFun =()=>{
+    //   document.write("hello from myFun arrow function");
+    // }
+    // myFun();
+
+    //passing parameters in regular function
+    // function myFun1(a,b,c){
+    //     document.write("value of a="+a+"<br>"+" "+"value of b="+b+"<br>"+" "+"value of c="+c);
+    // }
+    // myFun1(30,40,20);
+
+    //passing parameters in arrow function 
+      // myFun1=(a,b,c)=>{
+      //   document.write("value of a="+a+"<br>"+" "+"value of b="+b+"<br>"+" "+"value of c="+c);
+      // }
+      // myFun1(20,50,70);
+//passing return values in regular function
+    // function myFun1(a,b,c){
+    //   var sum=a+b+c;
+    //   document.write("sum inside function="+sum);
+    //   return sum;
+      
+    // }
+    // var total=myFun1(30,40,20);
+    // document.write("sum outside function="+total);
+
+//passing return values in arrow function
+  // myFun1=(a,b,c)=>{
+  //   var sum=a+b+c;
+  //     document.write("sum inside function="+sum);
+  //     return sum;
+  //     }
+  //     var total=myFun1(30,20,40);
+  //   document.write("sum outside function="+total);
+
+  //default parameters
+      // myFun2=(a,b=70)=>{
+      //  // var b=55;
+      // document.write(a+" "+b);
+      // }
+      // myFun2(20)
+//Rest parameters args[30,50,60,20,88]
+        myFun3=(a,b,...args)=>{
+          document.write(a +" "+ b+" "+ args);
+        }
+        myFun3(30,50,60,20,88)
+  </script>
+</body>
+</html>
