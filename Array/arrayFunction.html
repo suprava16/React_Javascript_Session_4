@@ -20,7 +20,7 @@ var arr3=[40.5,30.7,22.9];
 
     //concat function
     
-    // document.write(arr.concat(arr1));
+     //document.write(arr.concat(arr1));
     // var arr2=arr.concat(arr1);
     // document.write(arr2);
     // document.write("<br>")
@@ -28,7 +28,7 @@ var arr3=[40.5,30.7,22.9];
     // document.write(a);
 
     //join function
-    // document.write(arr.join("/"));
+   // document.write(arr.join("-"));
     // document.write(arr1.join("@"));
 
     //push function
@@ -61,6 +61,26 @@ var arr3=[40.5,30.7,22.9];
     // document.write("<br>");
     // var arr4=arr1.slice(1,4);
     // document.write(arr4);
+
+    //splice function
+    // document.write(arr1);
+    // document.write("<br>");
+    //arr1.splice(1,0,40,60);
+    // arr1.splice(2,2,"Rinky","Pinky");
+     //document.write(arr1);
+
+     //includes() function
+
+    // var a=arr1.includes("sriya");
+    // document.write(a);
+
+    //filter() function
+    var ages=[50,10,20,14,22,60]
+    var b=ages.filter(checkadult);
+    document.write(b+"<br>");
+    function checkadult(age){
+      return age>=18;
+    }
   </script>
 </body>
 </html>
