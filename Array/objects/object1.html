@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      // class student{
+      //   constructor(){
+      //     this.fname="suprava"
+      //     this.lname="padhi"
+      //     this.show=()=>{
+      //       return this.fname;
+      //     }
+      //   }
+      // }
+      // var obj=new student();
+      //document.write(obj)-error
+      // console.log(obj.fname)
+      // document.write(obj.lname)
+      //document.write(obj.show());
+
+      //Another way
+      const obj=new Object();
+      obj.name="suprava"
+      obj.city="bbsr"
+      // obj.show=function(){
+      //   return this.name;
+      // }
+      obj.show=()=>{
+        return obj.name;
+      }
+
+      // document.write(obj.name);
+      // document.write(obj.city);
+document.write(obj.show());
+
+
+  </script>
+</body>
+</html>
