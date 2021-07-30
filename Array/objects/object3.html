@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var obj = {
+      fname: "suprava",
+      name: "suprava",
+      lname: "padhi",
+      age: "26",
+      address: {
+        city: "bbsr",
+        state: "odisha"
+      },
+    }
+    // document.write(obj.fname);
+
+    //destructuring an object
+    // const{fname,lname,age}=obj;
+    //  const{city,state}=obj.address
+    //  const{fname:username}=obj
+    const { fname, ...rest } = obj
+
+    //   document.write(fname);
+    //   document.write(lname);
+    //   document.write(age)
+    //   document.write(city);
+    //   document.write(username)
+    document.write(fname);
+    console.log(rest)
+    document.write(rest.lname)
+
+
+  </script>
+</body>
+
+</html>

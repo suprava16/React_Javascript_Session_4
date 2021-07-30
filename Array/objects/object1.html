@@ -8,31 +8,34 @@
 </head>
 <body>
   <script>
-      // class student{
-      //   constructor(){
-      //     this.fname="suprava"
-      //     this.lname="padhi"
-      //     this.show=()=>{
-      //       return this.fname;
-      //     }
-      //   }
-      // }
-      // var obj=new student();
-      //document.write(obj)-error
-      // console.log(obj.fname)
-      // document.write(obj.lname)
-      //document.write(obj.show());
+    //   class student{
+    //     constructor(){
+    //       this.fname="suprava"
+    //       this.lname="padhi"
+    //       this.show=()=>{
+    //         return this.fname;
+    //       }
+    //       // this.show=function(){
+    //       //   return this.fname;
+    //       // }
+    //     }
+    //   }
+    //   var obj=new student();
+    //  // document.write(obj)-error
+    //   // console.log(obj.fname)
+    //   // document.write(obj.lname)
+    //   document.write(obj.show());
 
       //Another way
       const obj=new Object();
       obj.name="suprava"
       obj.city="bbsr"
-      // obj.show=function(){
-      //   return this.name;
-      // }
-      obj.show=()=>{
-        return obj.name;
+      obj.show=function(){
+        return this.name;
       }
+      // obj.show=()=>{
+      //   return obj.name;
+      // }
 
       // document.write(obj.name);
       // document.write(obj.city);
